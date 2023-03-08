@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" type='module' defer></script>
+    <title>Pong</title>
+</head>
+    <body>
+        <div class="score">
+            <div class="player-score">
+                <h2 class="player-title">Player</h2>
+                <h2><span id="player-counter">0</span></h2>
+            </div>
+            <div class="cpu-score">
+                <h2><span id="cpu-counter">0</span></h2><h2>Computer</h2>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="audio">
+                <audio loop id="player" src="./Assets/Electronic Fantasy.ogg"></audio>
+                <div class='audio-panel'> 
+                    <button onclick="document.getElementById('player').play()">Sound</button> 
+                    <button onclick="document.getElementById('player').pause()">Pause</button>
+                  </div>
+            </div>
+                <div class="ball" id="ball"></div>
+                <div class="sur left" id="player-sur"></div>
+                <div class="sur right" id="cpu-sur"></div>
+        </div>
+    </body>
+</html>
